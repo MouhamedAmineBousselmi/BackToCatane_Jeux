@@ -1,0 +1,18 @@
+#buttonAlu1, #buttonAlu2{
+    -fx-background-image: url("/icons/alu.png");
+}
+#buttonBrick1, #buttonBrick2{
+    -fx-background-image: url("/icons/brick.png");
+}
+#buttonOr1, #buttonOr2{
+    -fx-background-image: url("/icons/gold.png");
+}
+#buttonIron1, #buttonIron2{
+    -fx-background-image: url("/icons/iron.png");
+}
+#buttonOil1, #buttonOil2{
+    -fx-background-image: url("/icons/oil.png");
+}
+#buttonPluto1, #buttonPluto2{
+    -fx-background-image: url("/icons/pluto.png");
+}

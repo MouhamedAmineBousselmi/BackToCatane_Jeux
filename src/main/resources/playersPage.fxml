@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlayersPageControl">
+    <stylesheets>
+        <URL value="@mainMenuCSS.css" />
+    </stylesheets>
+    <children>
+      <Label fx:id="titlePlayerPage" layoutX="80.0" layoutY="14.0" text="Nouvelle partie" textFill="#b50808">
+         <font>
+            <Font name="Bauhaus 93" size="66.0" />
+         </font>
+      </Label>
+      <HBox fx:id="mainContainerPlayerPage" layoutX="118.0" layoutY="172.0" prefHeight="260.0" prefWidth="364.0">
+         <children>
+            <VBox fx:id="vbox1PlayerPage" prefHeight="402.0" prefWidth="236.0" />
+            <VBox fx:id="vbox2PlayerPage" prefHeight="402.0" prefWidth="194.0" />
+         </children>
+      </HBox>
+      <RadioButton fx:id="radioButton3" layoutX="140.0" layoutY="106.0" mnemonicParsing="false" onAction="#creationPlayerPanel" text="3 joueurs">
+         <toggleGroup>
+            <ToggleGroup fx:id="nbrJoueurs" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioButton4" layoutX="308.0" layoutY="106.0" mnemonicParsing="false" onAction="#creationPlayerPanel" selected="true" text="4 joueurs" toggleGroup="$nbrJoueurs" />
+      <Button fx:id="buttonBackPlayerPage" layoutX="471.0" layoutY="537.0" mnemonicParsing="false" onAction="#backButton" text="Retour" />
+      <Button fx:id="buttonLaunchGame" layoutX="268.0" layoutY="475.0" mnemonicParsing="false" onAction="#launchgameview" text="Jouer" />
+   </children>
+</AnchorPane>

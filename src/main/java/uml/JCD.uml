@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="0.0">model.Joueur</node>
+    <node x="0.0" y="779.0">model.Route</node>
+    <node x="744.0" y="711.0">model.GrandPlateau</node>
+    <node x="279.0" y="768.0">model.Laboratoire</node>
+    <node x="0.0" y="865.0">model.TypeRessource</node>
+    <node x="328.0" y="865.0">model.Carte</node>
+    <node x="99.0" y="768.0">model.Delorean</node>
+    <node x="48.62500000000003" y="576.0">model.Placeable</node>
+    <node x="272.0" y="496.0">model.ObjetPlateau</node>
+    <node x="172.0" y="865.0">model.TypeTerrain</node>
+    <node x="883.0" y="711.0">model.PetitPlateau</node>
+    <node x="346.625" y="576.5">model.Hexagone</node>
+    <node x="747.0" y="496.0">model.Plateau</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="model.PetitPlateau" target="model.Plateau">
+      <point x="0.0" y="-15.0" />
+      <point x="938.5" y="686.0" />
+      <point x="933.0" y="686.0" />
+      <point x="62.0" y="82.5" />
+    </edge>
+    <edge source="model.Laboratoire" target="model.Placeable">
+      <point x="0.0" y="-26.0" />
+      <point x="489.0" y="743.0" />
+      <point x="280.29166666666674" y="743.0" />
+      <point x="92.66666666666669" y="71.0" />
+    </edge>
+    <edge source="model.Delorean" target="model.Placeable">
+      <point x="0.0" y="-26.0" />
+      <point x="179.0" y="743.0" />
+      <point x="187.62500000000003" y="743.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="model.Placeable" target="model.ObjetPlateau">
+      <point x="0.0" y="-71.0" />
+      <point x="187.62500000000003" y="551.0" />
+      <point x="301.0" y="551.0" />
+      <point x="-29.0" y="15.0" />
+    </edge>
+    <edge source="model.Route" target="model.Placeable">
+      <point x="0.0" y="-15.0" />
+      <point x="39.5" y="743.0" />
+      <point x="94.95833333333334" y="743.0" />
+      <point x="-92.66666666666669" y="71.0" />
+    </edge>
+    <edge source="model.Hexagone" target="model.ObjetPlateau">
+      <point x="0.0" y="-70.5" />
+      <point x="489.625" y="551.0" />
+      <point x="359.0" y="551.0" />
+      <point x="29.0" y="15.0" />
+    </edge>
+    <edge source="model.GrandPlateau" target="model.Plateau">
+      <point x="0.0" y="-15.0" />
+      <point x="803.5" y="686.0" />
+      <point x="809.0" y="686.0" />
+      <point x="-62.0" y="82.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="825.0" y="725.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

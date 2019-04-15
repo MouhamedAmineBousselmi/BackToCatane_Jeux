@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProductionControl">
+    <stylesheets>
+        <URL value="@productionCSS.css" />
+    </stylesheets>
+    <children>
+      <Button fx:id="buttonOk" disable="true" layoutX="500.0" layoutY="360.0" mnemonicParsing="false" onAction="#actionButtonOk" text="OK" />
+      <VBox layoutX="30.0" layoutY="50.0" prefHeight="322.0" prefWidth="168.0" spacing="5.0">
+         <children>
+            <ToggleButton fx:id="buttonAlu1" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0">
+               <toggleGroup>
+                  <ToggleGroup fx:id="groupActivePlayer" />
+               </toggleGroup></ToggleButton>
+            <ToggleButton fx:id="buttonBrick1" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" toggleGroup="$groupActivePlayer"/>
+            <ToggleButton fx:id="buttonOr1" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" toggleGroup="$groupActivePlayer" />
+            <ToggleButton fx:id="buttonIron1" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" toggleGroup="$groupActivePlayer" />
+            <ToggleButton fx:id="buttonOil1" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" toggleGroup="$groupActivePlayer" />
+            <ToggleButton fx:id="buttonPluto1" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" toggleGroup="$groupActivePlayer" />
+         </children>
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="373.0" layoutY="50.0" prefHeight="322.0" prefWidth="168.0" spacing="5.0">
+         <children>
+            <ToggleButton fx:id="buttonAlu2" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0">
+               <toggleGroup>
+                  <ToggleGroup fx:id="groupOtherPlayer" />
+               </toggleGroup></ToggleButton>
+            <ToggleButton fx:id="buttonBrick2" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" toggleGroup="$groupOtherPlayer" />
+            <ToggleButton fx:id="buttonIron2" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" toggleGroup="$groupOtherPlayer" />
+         </children>
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+      </VBox>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="216.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/arrow.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelActivePlayer" layoutX="70.0" layoutY="17.0" text="Label" />
+      <Label fx:id="labelOtherPlayer" layoutX="407.0" layoutY="17.0" text="Label" />
+   </children>
+</AnchorPane>
